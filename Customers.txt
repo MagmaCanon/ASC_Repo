@@ -1,0 +1,18 @@
+#!/usr/bin/python
+from sys import argv
+
+script, first, second, third = argv
+
+name = first
+age = second
+birthmonth = third
+
+with open("customers.txt", "a") as customers
+	customers.write(%s) % name
+	customers.write(%s) % age
+	customers.write(%s) % birthmonth
+
+customers.close()
+print "Your name is %s." % name
+print "Your age is %s." % age
+print "Your birthmonth is %s." % birthmonth
